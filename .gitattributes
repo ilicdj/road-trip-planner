@@ -1,0 +1,12 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare files as text or binary
+*.c text
+*.h text
+*.js text
+*.jsx text
+*.json text
+*.md text
+*.html text
+*.css text
