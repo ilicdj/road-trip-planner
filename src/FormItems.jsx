@@ -21,17 +21,17 @@ export default function FormItems({ onAddItems }) {
   };
   return (
     <form
-      className="mt-5 p-5 text-center border border-dark"
+      className="d-flex gap-3 justify-content-center align-items-center mt-5 p-5 text-center border border-dark"
       onSubmit={handleSubmit}
     >
       <input
-        className="me-5"
+        className="form_element"
         type="text"
         value={inputItem}
         onChange={(e) => setInputItem(e.target.value)}
       ></input>
       <select
-        className="me-5"
+        className="form_element"
         value={quantity}
         onChange={(e) => setQuantity(e.target.value)}
       >

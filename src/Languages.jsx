@@ -24,10 +24,8 @@ export default function Languages() {
   const languagesKeys = Object.keys(languages);
   const languagesValues = Object.values(languages);
   return (
-    <div className="bg-dark p-5 w-50 text-center">
-      <p className="text-light m-0">
-        {languagesKeys[randomNumber]} : {languagesValues[randomNumber]}
-      </p>
-    </div>
+    <p className="text-light mt-5 bg-dark p-5 w-50 text-center">
+      {languagesKeys[randomNumber]} : {languagesValues[randomNumber]}
+    </p>
   );
 }

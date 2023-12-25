@@ -40,15 +40,50 @@ input[type="checkbox"] {
 }
 /* Breakpoints */
 @media (max-width: 768px) {
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-  }
   .package_list {
     display: flex;
     flex-direction: column;
     margin-top: -10px;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+  }
+  .stats > p {
+    width: 100% !important;
+    margin-top: 24px !important;
+    padding: 24px !important;
+  }
+  .stats > p {
+    width: 100% !important;
+    margin-top: 24px !important;
+    padding: 24px !important;
+  }
+  .stats > p:nth-child(2) {
+    margin-top: 0px !important;
+  }
+}
+@media (max-width: 481px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+  .form_element {
+    margin-left: 0 !important;
+  }
+  .manage_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .manage_items button {
+    margin: 0 !important;
+  }
+  footer {
+    padding-bottom: 48px;
   }
 }

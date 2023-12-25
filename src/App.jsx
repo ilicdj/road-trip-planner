@@ -8,6 +8,7 @@ import Languages from "./Languages";
 import Experience from "./Experience";
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
+import FooterInfo from "./FooterInfo";
 
 export default function App() {
   function handleToggleItems(id) {
@@ -51,10 +52,11 @@ export default function App() {
         onDeleteItem={handleDeleteItems}
         onClearList={handleClearList}
       />
-      <div className="d-flex align-items-center gap-2">
+      <div className="d-flex align-items-center gap-2 stats">
         <Stats items={items} />
         <Languages />
       </div>
+      <FooterInfo />
     </div>
   );
 }

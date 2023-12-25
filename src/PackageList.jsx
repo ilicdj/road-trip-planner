@@ -32,7 +32,7 @@ export default function PackageList({
             />
           ))}
         </ul>
-        <div className="d-flex">
+        <div className="manage_items d-flex">
           <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
             <option value="order">Sort by input order</option>
             <option value="name">Sort by input name</option>
